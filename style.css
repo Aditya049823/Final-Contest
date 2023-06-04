@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+#carouselExampleCaptions .carousel-inner .carousel-item img{
+    height:600px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+header nav{
+    border-bottom: 1px solid grey;
+    justify-content: center;
+}
+
+.wrapper
+{
+    position: relative;
+    top:80px;
+    width:100%;
+}
+
+.wrapper .section1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap:135px;
+}
+
+img{
+    width:300px;
+    height:200px;
+}
+
+.section1 .img1 p{
+    position: relative;
+    top:5px;
+    margin-left: 30px;
+    font-size: 17px;
+}
+
+.wrapper .section2{
+    display: grid;
+    grid-template-columns: repeat(3,40%);
+    grid-template-rows: repeat(3,50%);
+    position: relative;
+    top:20px;
+    padding-right: 70px;
+}
+
+.section2 .image1{
+    margin-left: 88px;
+}
+
+.image1 img{
+    height:403px;
+}
+.section2 .image2{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    gap: 24px;
+    row-gap: 3px;
+    padding: 0;
+    margin-left: -111px;
+}
+
+.image2 img{
+    width:270px;
+}
+.section2 .image3{
+    row-gap: 3px;
+    padding-right: 0px;
+    display: grid;
+    padding: 0;
+    width: 75%;
+    margin-left: -61px;
+}
+
+.image3 img{
+    width:300px;
+}
+
+.section2 .image4{
+    width: 245%;
+    display: flex;
+    position: relative;
+    top: 5px;
+    justify-content: left;
+    margin-left: 88px;
+
+}
+
+.image4 .first{
+    height:403px;
+}
+
+.image4 .second{
+    height: 403px;
+    margin-left: 13px;
+    width: 861px;
+}
+
+.wrapper .section3{
+    position: relative;
+    top: 60px;
+    margin-left: 63px;
+    margin-right: 63px;
+    display: flex;
+    justify-content: space-around;
+    gap: 114px;
+}
+
+footer{
+    position: relative;
+    top:130px;
+    width:100%;
+    border-top: 1px solid grey;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.rights{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights p{
+    margin-left: 77px;
+    position: relative;
+    top:10px;
+}
+.rights a{
+    width: 149px;
+    height: 37px;
+}
+.carousel {
+    position: relative;
+    top: 56px;
+    width: 100%;
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    header nav{
+        width:auto;
+    }
+
+    .wrapper .section1{
+        display: flex;
+        flex-direction: row;
+        row-gap: 5px;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2,100%);
+        grid-template-rows: repeat(2,50%);
+        width: 100%;
+    }
+
+    .wrapper .section2{
+        top: 12px;
+        grid-template-rows: repeat(3,33.33%);
+        grid-template-columns: repeat(3,33.33%);
+        margin-inline-start: 53px;
+    }
+    .image1 img {
+        height: 270px;
+        margin-left: -88px;
+        width: 210px;
+    }
+    .image2 img {
+        height: 134px;
+        width: 100px;
+    }
+
+    .section2 .image2{
+        grid-template-columns: repeat(2, 42%);
+        margin-left: 3px;
+        column-gap: 17px;
+        row-gap: 2px;
+    }
+
+    .section2 .image3{
+        margin-left: 0px;
+    }
+    .image3 img {
+        width: 270px;
+        height: 134px;
+    }
+
+    .section2 .image4{
+        top:93px;
+        margin-left: 0px;
+    }
+
+    .image4 .first {
+        height: 270px;
+        width: 210px;
+    }
+    .image4 .second {
+        height: 270px;
+        margin-left: 8px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+
+    headercarousel{
+        position: relative;
+        top:2px;
+    }
+    .wrapper {
+        position: relative;
+        top: 80px;
+        width: 195%;
+    }
+    .wrapper .section1 {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .carousel{
+        width:195%;
+    }
+    .carousel-item h5{
+        font-size: 25px;
+    }
+    .d-none{
+        display: block !important;
+    }
+
+    .wrapper .section2{
+        padding-right: 143px;
+    }
+
+    .img1 img{
+        width: 500px;
+        height: 200px;
+    }
+    .section2 .image2{
+        margin-left: -15px;
+        gap:22px;
+        row-gap: 5px;
+    }
+    .image1 img{
+        width:216px;
+    }
+    .image2 img{
+        width:152px;
+    }
+
+    .section2 .img3{
+        margin-left: -24px;
+    }
+
+    .image4 .first {
+        height: 403px;
+        width: 216px;
+    }
+
+    .wrapper .section3 {
+        display: block;
+        text-align: -webkit-center;
+    }
+
+    .section3 .card{
+        width: 465px !important;;
+    }
+
+    footer{
+        width:195%;
+    }
+
+    .container{
+        display: block;
+    }
+
+    .rights p{
+        margin-left: 7px;
+    }
+}
+
+
